@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTM Generate</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <p class="text-hint">Пример, какой адрес сайта нужно вписывать - google.com</p>
+      <form class="form">
+        <h2 class="form__title">Адрес вашей страницы</h2>
+        <div class="form__input-wrap">
+          <div class="js-dropdown form__dropdown"><span class="button_interactive js-dropdown-current form__dropdown-current" id="button-dropdown">https://</span>
+            <div class="js-dropdown-item form__dropdown-item">http://</div>
+          </div>
+          <input type="text" placeholder="Введите адрес страницы" id="input-string">
+        </div>
+        <h2 class="form__title">Источник трафика</h2>
+        <div class="form__radio-group">
+          <div class="form__radio-item">
+            <label class="form__radio-label">Свои значения
+              <input class="form__radio-input" type="radio" name="deadline" id="own-choose-radio" checked><span class="form__radio"></span>
+            </label>
+          </div>
+          <div class="form__radio-item">
+            <label class="form__radio-label">Google Adwords
+              <input class="form__radio-input" type="radio" name="deadline" id="google"><span class="form__radio"></span>
+            </label>
+          </div>
+          <div class="form__radio-item">
+            <label class="form__radio-label">Яндекс.Директ
+              <input class="form__radio-input" type="radio" name="deadline" id="yandex"><span class="form__radio"></span>
+            </label>
+          </div>
+          <div class="form__radio-item">
+            <label class="form__radio-label">Вконтакте
+              <input class="form__radio-input" type="radio" name="deadline" id="vk"><span class="form__radio"></span>
+            </label>
+          </div>
+          <div class="form__radio-item">
+            <label class="form__radio-label">Facebook
+              <input class="form__radio-input" type="radio" name="deadline" id="fb"><span class="form__radio"></span>
+            </label>
+          </div>
+        </div>
+        <div class="form__edit-group">
+          <div class="col">
+            <h2 class="form__title">Обязательные параметры</h2>
+            <label class="form__label" for="utm_source">Источник кампании</label>
+            <div class="form__input-wrap"><span class="form__input-title">utm_source</span>
+              <input class="form__input" type="text" placeholder="google, yandex, vk, facebook" id="utm_source" data-id="utm_source">
+            </div>
+            <label class="form__label" for="utm_medium">Тип трафика</label>
+            <div class="form__input-wrap"><span class="form__input-title">utm_medium</span>
+              <input class="form__input" type="text" placeholder="cpc, email, banner, article" id="utm_medium" data-id="utm_medium">
+            </div>
+            <label class="form__label" for="utm_campaign">Название кампании</label>
+            <div class="form__input-wrap"><span class="form__input-title">utm_campaign</span>
+              <input class="form__input" type="text" placeholder="cpc, email, banner, article" id="utm_campaign" data-id="utm_campaign">
+              <div class="form__hint"></div>
+            </div>
+          </div>
+          <div class="col">
+            <h2 class="form__title">Необязательные параметры</h2>
+            <label class="form__label" for="utm_content">Идентификатор объявления</label>
+            <div class="form__input-wrap"><span class="form__input-title">utm_content</span>
+              <input class="form__input" type="text" placeholder="link, landing page" id="utm_content" data-id="utm_content">
+              <div class="form__hint"></div>
+            </div>
+            <label class="form__label" for="utm_term">Ключевое слово</label>
+            <div class="form__input-wrap"><span class="form__input-title">utm_term</span>
+              <input class="form__input" type="text" placeholder="free, -30%, registration" id="utm_term" data-id="utm_term">
+              <div class="form__hint"></div>
+            </div>
+          </div>
+        </div>
+        <div class="form__result-wrap">
+          <h2 class="form__title">Результат</h2>
+          <div class="form__result-group">
+            <button class="js-copy-button button button_interactive" disabled>Копировать ссылку</button>
+            <input readonly placeholder="Здесь появится результат ваших действий..." id="input-result">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="js-popup-copy-successful popup-copy-successful popup-copy-successful_hidden">Ссылка скопирована!</div>
+    <script src="js/index-min.js"></script>
+  </body>
+</html>
