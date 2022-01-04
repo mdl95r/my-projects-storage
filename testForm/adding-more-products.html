@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>testForm</title>
+  </head>
+  <body>
+    <form class="modal-form">
+      <div class="modal-form__container">
+        <div class="modal-form__head">
+          <h2 class="modal-form__title">Adding more products</h2>
+          <p class="modal-form__hint">The more items you check, the better the price.</p>
+        </div>
+        <ul class="modal-form__products-list">
+          <li class="modal-form__products-item modal-form__products-item_active" data-value="80">
+            <label class="modal-form__products-label">
+              <input class="modal-form__products-input" type="radio" name="radio" checked="checked"><span class="modal-form__fake-input"></span>
+              <div class="modal-form__products-text">
+                <h3 class="modal-form__products-title">5 products for 80 usd / 16$ for each</h3>
+                <p class="modal-form__products-hint">You safe 36% on each patent check</p>
+              </div>
+            </label>
+          </li>
+          <li class="modal-form__products-item" data-value="72">
+            <label class="modal-form__products-label">
+              <input class="modal-form__products-input" type="radio" name="radio"><span class="modal-form__fake-input"></span>
+              <div class="modal-form__products-text">
+                <h3 class="modal-form__products-title">4 products for 72 usd / 18$ for each</h3>
+                <p class="modal-form__products-hint">You safe 28% on each patent check</p>
+              </div>
+            </label>
+          </li>
+          <li class="modal-form__products-item" data-value="60">
+            <label class="modal-form__products-label">
+              <input class="modal-form__products-input" type="radio" name="radio"><span class="modal-form__fake-input"></span>
+              <div class="modal-form__products-text">
+                <h3 class="modal-form__products-title">3 products for 60 usd / 20$ for each</h3>
+                <p class="modal-form__products-hint">You safe 20% on each patent check</p>
+              </div>
+            </label>
+          </li>
+          <li class="modal-form__products-item" data-value="44">
+            <label class="modal-form__products-label">
+              <input class="modal-form__products-input" type="radio" name="radio"><span class="modal-form__fake-input"></span>
+              <div class="modal-form__products-text">
+                <h3 class="modal-form__products-title">2 products for 44 usd / 22$ for each</h3>
+                <p class="modal-form__products-hint">You safe 12% on each patent check</p>
+              </div>
+            </label>
+          </li>
+          <li class="modal-form__products-item" data-value="24.99">
+            <label class="modal-form__products-label">
+              <input class="modal-form__products-input" type="radio" name="radio"><span class="modal-form__fake-input"></span>
+              <div class="modal-form__products-text">
+                <h3 class="modal-form__products-title">1 product for 24.99 usd</h3>
+              </div>
+            </label>
+          </li>
+        </ul>
+        <button class="js-step-btn modal-form__submit-btn">Continue</button>
+      </div>
+    </form>
+    <script src="js/main-min.js"> </script>
+  </body>
+</html>
