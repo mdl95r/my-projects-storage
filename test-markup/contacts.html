@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vendors.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Test-2</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="container-fluid">
+          <div class="row d-flex align-items-md-center align-items-xl-start">
+            <div class="header__logo"><img src="img/logo.png" srcset="img/logo-2x.png 2x" alt></div>
+            <div class="col col-xl-2 align-self-center align-self-xl-start">
+              <div class="header__dealer-name">длинное название дилера</div>
+            </div>
+            <div class="d-none d-xl-block col-md-8 col-lg-8 ml-xl-3">
+              <ul class="header__contacts-list">
+                <li class="header__contacts-item">
+                  <p>Москва, МКАД 18 км (внешняя сторона)</p><a href="#">+7 (495) 126-63-96</a>
+                </li>
+                <li class="header__contacts-item">
+                  <p>Москва, МКАД 47 км (внешняя сторона)</p><a href="#">+7 (495) 126-64-08</a>
+                </li>
+                <li class="header__contacts-item">
+                  <p>Москва, Новорижское ш., 9 км от МКАД</p><a href="#">+7 (495) 126-63-86</a>
+                </li>
+              </ul>
+            </div><a class="header__lang-toogle" href="#">EN</a>
+            <div class="col-lg-8 col-xl-10 d-none d-xl-flex">
+              <nav class="header__nav-menu">
+                <ul class="header__list-items">
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="0">Автомобили</a></li>
+                  <li class="header__list-item"><a class="header__list-link" href="#">В наличии</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="1">Предложения</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link" href="#">Продать</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="2">Владельцам</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="3">О нас</a></li>
+                  <li class="header__list-item"><a class="header__list-link" href="#">ссылка дилера</a></li>
+                </ul>
+              </nav>
+            </div>
+            <button class="js-burger-btn header__burger-btn"></button>
+            <div class="d-none d-xl-flex col-md-2 justify-content-end header__list-icons">
+              <svg class="header__list-icon" width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-best-dealer"/>
+              </svg>
+              <svg class="header__list-icon" width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-sv-logo"/>
+              </svg>
+              <svg class="header__list-icon" width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-map-pin"/>
+              </svg>
+              <svg class="header__list-icon" width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-search"/>
+              </svg>
+            </div>
+            <div class="js-mob-menu header__mob-menu">
+              <nav class="header__nav-menu">
+                <ul class="header__list-items">
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="0">Автомобили</a></li>
+                  <li class="header__list-item"><a class="header__list-link" href="#">В наличии</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="1">Предложения</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link" href="#">Продать</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="2">Владельцам</a></li>
+                  <li class="header__list-item"><a class="js-dropdown-menu header__list-link header__list-link_dropdown" href="#" data-menu-item="3">О нас</a></li>
+                  <li class="header__list-item"><a class="header__list-link" href="#">ссылка дилера</a></li>
+                </ul>
+              </nav>
+              <ul class="header__contacts-list">
+                <li class="header__contacts-item"><a class="row align-items-center no-gutters" href="#">
+                    <div class="col pr-2">
+                      <p>Москва, МКАД 18 км (внешняя сторона)</p><span>+7 (495) 126-63-96</span>
+                    </div>
+                    <div class="col-auto">
+                      <svg class="header__phone-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-phone"/>
+                      </svg>
+                    </div></a></li>
+                <li class="header__contacts-item"><a class="row align-items-center no-gutters" href="#">
+                    <div class="col pr-2">
+                      <p>Москва, МКАД 47 км (внешняя сторона)</p><span>+7 (495) 126-64-08</span>
+                    </div>
+                    <div class="col-auto">
+                      <svg class="header__phone-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-phone"/>
+                      </svg>
+                    </div></a></li>
+                <li class="header__contacts-item"><a class="row align-items-center no-gutters" href="#">
+                    <div class="col pr-2">
+                      <p>Москва, Новорижское ш., 9 км от МКАД</p><span>+7 (495) 126-63-86</span>
+                    </div>
+                    <div class="col-auto">
+                      <svg class="header__phone-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-phone"/>
+                      </svg>
+                    </div></a></li>
+              </ul>
+              <ul class="header__list-icons">
+                <li><a href="#">
+                    <svg class="header__list-icon" width="1em" height="1em">
+                      <use xlink:href="img/icons/sprites.svg#icon-map-pin"/>
+                    </svg><span>адреса автоцентров</span></a></li>
+                <li><a href="#">
+                    <svg class="header__list-icon" width="1em" height="1em">
+                      <use xlink:href="img/icons/sprites.svg#icon-sv-logo"/>
+                    </svg><span>специальные версии</span></a></li>
+                <li><a href="#">
+                    <svg class="header__list-icon" width="1em" height="1em">
+                      <use xlink:href="img/icons/sprites.svg#icon-search"/>
+                    </svg><span>поиск</span></a></li>
+              </ul><a class="header__lang-toogle" href="#">in english</a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="js-submenu dropdown-menu" data-menu-lev-2="0">
+            <button class="js-lev2-back-btn dropdown-menu__back-btn">автомобили</button>
+            <button class="js-close-submenu-btn dropdown-menu__close-btn">
+              <svg width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-cross"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu__dropdown-menu-items">
+              <ul class="dropdown-menu__list-cars">
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="0"><img class="dropdown-menu__car-img" src="img/resources/cars/image17.jpg" srcset="img/resources/cars/image17_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>RANGE ROVER</p><span>от 7 523 000 <span>₽</span></span>
+                    </div></a></li>
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="1"><img class="dropdown-menu__car-img" src="img/resources/cars/image18.jpg" srcset="img/resources/cars/image18_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>RANGE ROVER SPORT</p><span>от 5 387 000 <span>₽</span></span>
+                    </div></a></li>
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="2"><img class="dropdown-menu__car-img" src="img/resources/cars/image20.jpg" srcset="img/resources/cars/image20_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>RANGE ROVER VELAR</p><span>от 3 950 000 <span>₽</span></span>
+                    </div></a></li>
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="3"><img class="dropdown-menu__car-img" src="img/resources/cars/image21.jpg" srcset="img/resources/cars/image21_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>НОВЫЙ RANGE ROVER EVOQUE</p><span>от 2 975 000 <span>₽</span></span>
+                    </div></a></li>
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="4"><img class="dropdown-menu__car-img" src="img/resources/cars/image22.jpg" srcset="img/resources/cars/image22_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>DISCOVERY</p><span>от 4 008 000 <span>₽</span></span>
+                    </div></a></li>
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="5"><img class="dropdown-menu__car-img" src="img/resources/cars/image23.jpg" srcset="img/resources/cars/image23_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>НОВЫЙ DISCOVERY SPORT</p><span>от 2 860 000 <span>₽</span></span>
+                    </div></a></li>
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="6"><img class="dropdown-menu__car-img" src="img/resources/cars/image52.jpg" srcset="img/resources/cars/image52_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>новый defender</p>
+                    </div></a></li>
+                <li class="dropdown-menu__car-item"><a class="js-menu-lev3 dropdown-menu__link-wrap" href="#" data-menu-lev3="7"><img class="dropdown-menu__car-img" src="img/resources/cars/image54.jpg" srcset="img/resources/cars/image54_2x.jpg 2x" alt>
+                    <div class="dropdown-menu__item-info">
+                      <p>специальные версии</p>
+                    </div></a></li>
+              </ul>
+                  <div class="dropdown-menu__menu-lev-3">
+                    <div class="dropdown-menu__content" data-submenu-lev3="0">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">RANGE ROVER</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>RANGE ROVER</h3>
+                                    <p class="dropdown-menu__car-subtitle">Истинный Range Rover</p>
+                                  </div>
+                                </div>
+                                <div class="col-xl-4">
+                                  <div class="dropdown-menu__car-price-wrap"><span>Цена от:</span>
+                                    <p class="dropdown-menu__car-price">от 7 523 000<span>₽</span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">Обзор</a></li>
+                              <li><a class="button__link" href="#">Комплектации</a></li>
+                              <li><a class="button__link" href="#">Особенности</a></li>
+                              <li><a class="button__link" href="#">Специальные предложения</a></li>
+                              <li><a class="button__link" href="#">Конфигуратор</a></li>
+                              <li><a class="button__link" href="#">Корпоративные продажи</a></li>
+                              <li><a class="button__link" href="#">СЕРВИСНЫЙ ПАКЕТ</a></li>
+                              <li><a class="button__link" href="#">Тестовый подраздел</a></li>
+                              <li><a class="button__link" href="#">Галерея</a></li>
+                              <li><a class="button__link" href="#">Галерея с категориями</a></li>
+                              <li><a class="button__link" href="#">Характеристики</a></li>
+                              <li><a class="button__link" href="#">Галерея RANGE ROVER</a></li>
+                              <li><a class="button__link" href="#">Брошюра</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                          <div class="dropdown-menu__car-disclaimer">
+                            <p><sup>1</sup> [1]В 2018 году повторная спецификация характеристик двигателей еще не проводилась. Указанные данные соответствуют сертифицированным значениям NEDC (новый Европейский ездовой цикл) 2017 года. *В модификациях PHEV и при установке задних сидений повышенной комфортности объем багажного отделения уменьшается. Для получения более подробной информации обратитесь в официальный дилерский центр</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu__content" data-submenu-lev3="1">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">RANGE ROVER SPORT</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>RANGE ROVER SPORT</h3>
+                                    <p class="dropdown-menu__car-subtitle">Самый динамичный и маневренный Land Rover</p>
+                                  </div>
+                                </div>
+                                <div class="col-xl-4">
+                                  <div class="dropdown-menu__car-price-wrap"><span>Цена от:</span>
+                                    <p class="dropdown-menu__car-price">от 5 387 000<span>₽</span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">Обзор</a></li>
+                              <li><a class="button__link" href="#">Комплектации</a></li>
+                              <li><a class="button__link" href="#">Особенности</a></li>
+                              <li><a class="button__link" href="#">Специальные предложения</a></li>
+                              <li><a class="button__link" href="#">Конфигуратор</a></li>
+                              <li><a class="button__link" href="#">Корпоративные продажи</a></li>
+                              <li><a class="button__link" href="#">Галерея</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                          <div class="dropdown-menu__car-disclaimer">
+                            <p><sup>1</sup> В 2018 году повторная спецификация характеристик двигателей еще не проводилась. Указанные данные соответствуют сертифицированным значениям NEDC (новый Европейский ездовой цикл) 2017 года. *Сиденья третьего ряда подходят для подростков, которые могут воспользоваться ремнем безопасности для взрослых или дополнительной подушкой сиденья, позволяющей пристегнуться такими ремнями. Они не подходят для маленьких детей, которым требуется детское кресло, поскольку в таком случае ремень безопасности для взрослых не используется напрямую, чтобы удержать ребенка.Сиденья третьего ряда подходят для подростков, которые могут воспользоваться ремнем безопасности для взрослых или дополнительной подушкой сиденья, позволяющей пристегнуться такими ремнями. Они не подходят для маленьких детей, которым требуется детское кресло, поскольку в таком случае ремень безопасности для взрослых не используется напрямую, чтобы удержать ребенка. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu__content" data-submenu-lev3="2">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">RANGE ROVER VELAR</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>RANGE ROVER VELAR</h3>
+                                    <p class="dropdown-menu__car-subtitle">Самый динамичный и маневренный Land Rover</p>
+                                  </div>
+                                </div>
+                                <div class="col-xl-4">
+                                  <div class="dropdown-menu__car-price-wrap"><span>Цена от:</span>
+                                    <p class="dropdown-menu__car-price">от 3 950 000<span>₽</span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">обзор</a></li>
+                              <li><a class="button__link" href="#">Комплектации</a></li>
+                              <li><a class="button__link" href="#">Особенности</a></li>
+                              <li><a class="button__link" href="#">Технологии</a></li>
+                              <li><a class="button__link" href="#">Конфигуратор</a></li>
+                              <li><a class="button__link" href="#">Брошюра</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                          <div class="dropdown-menu__car-disclaimer">
+                            <p><sup>1</sup> В 2018 году повторная спецификация характеристик двигателей еще не проводилась. Указанные данные соответствуют сертифицированным значениям NEDC (новый Европейский ездовой цикл) 2017 года</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu__content" data-submenu-lev3="3">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">НОВЫЙ RANGE ROVER EVOQUE</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>НОВЫЙ RANGE ROVER EVOQUE</h3>
+                                    <p class="dropdown-menu__car-subtitle">Время заявить о себе</p>
+                                  </div>
+                                </div>
+                                <div class="col-xl-4">
+                                  <div class="dropdown-menu__car-price-wrap"><span>Цена от:</span>
+                                    <p class="dropdown-menu__car-price">от 2 975 000<span>₽</span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">обзор</a></li>
+                              <li><a class="button__link" href="#">Комплектации</a></li>
+                              <li><a class="button__link" href="#">Особенности</a></li>
+                              <li><a class="button__link" href="#">Конфигуратор</a></li>
+                              <li><a class="button__link" href="#">Брошюра</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                          <div class="dropdown-menu__car-disclaimer">
+                            <p><sup>1</sup> В 2018 году повторная спецификация характеристик двигателей еще не проводилась. Указанные данные соответствуют сертифицированным значениям NEDC (новый Европейский ездовой цикл) 2017 года</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu__content" data-submenu-lev3="4">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">DISCOVERY</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>DISCOVERY</h3>
+                                    <p class="dropdown-menu__car-subtitle">Впечатляющий дизайн нашего самого универсального внедорожника с непревзойденными возможностями</p>
+                                  </div>
+                                </div>
+                                <div class="col-xl-4">
+                                  <div class="dropdown-menu__car-price-wrap"><span>Цена от:</span>
+                                    <p class="dropdown-menu__car-price">от 4 008 000<span>₽</span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">обзор</a></li>
+                              <li><a class="button__link" href="#">Комплектации</a></li>
+                              <li><a class="button__link" href="#">Особенности</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                          <div class="dropdown-menu__car-disclaimer">
+                            <p><sup>1</sup> В 2018 году повторная спецификация характеристик двигателей еще не проводилась. Указанные данные соответствуют сертифицированным значениям NEDC (новый Европейский ездовой цикл) 2017 года. Wet: объем определен путем моделирования заполнения багажного отделения жидкостью.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu__content" data-submenu-lev3="5">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">НОВЫЙ DISCOVERY SPORT</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>НОВЫЙ DISCOVERY SPORT</h3>
+                                    <p class="dropdown-menu__car-subtitle">Универсальный компактный внедорожник, созданный для приключений</p>
+                                  </div>
+                                </div>
+                                <div class="col-xl-4">
+                                  <div class="dropdown-menu__car-price-wrap"><span>Цена от:</span>
+                                    <p class="dropdown-menu__car-price">от 2 860 000<span>₽</span></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">обзор</a></li>
+                              <li><a class="button__link" href="#">Комплектации</a></li>
+                              <li><a class="button__link" href="#">Особенности</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                          <div class="dropdown-menu__car-disclaimer">
+                            <p><sup>1</sup> В 2018 году повторная спецификация характеристик двигателей еще не проводилась. Указанные данные соответствуют сертифицированным значениям NEDC (новый Европейский ездовой цикл) 2017 года. Wet: объем определен путем моделирования заполнения багажного отделения жидкостью.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu__content" data-submenu-lev3="6">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">новый defender</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>новый defender</h3>
+                                    <p class="dropdown-menu__car-subtitle">Cпособен на многое</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">Обзор</a></li>
+                              <li><a class="button__link" href="#">Комплектации</a></li>
+                              <li><a class="button__link" href="#">Особенности</a></li>
+                              <li><a class="button__link" href="#">Специальные предложения</a></li>
+                              <li><a class="button__link" href="#">Конфигуратор</a></li>
+                              <li><a class="button__link" href="#">Корпоративные продажи</a></li>
+                              <li><a class="button__link" href="#">Галерея</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dropdown-menu__content" data-submenu-lev3="7">
+                      <button class="js-lev3-back-btn dropdown-menu__back-btn">специальные версии</button>
+                      <div class="dropdown-menu__cars-wrap">
+                        <div class="dropdown-menu__main-info">
+                          <picture>
+                            <source media="(min-width: 768px)" srcset="img/resources/cars/image20_590px.jpg"><img class="dropdown-menu__car-img" src="img/resources/cars/image20_900px.jpg" srcset="img/resources/cars/image20_1800px.jpg 2x" alt>
+                          </picture>
+                          <div class="dropdown-menu__car-desc">
+                            <div class="container">
+                              <div class="row no-gutters">
+                                <div class="col-xl-8">
+                                  <div class="dropdown-menu__car-desc-wrap">
+                                    <h3>специальные версии</h3>
+                                    <p class="dropdown-menu__car-subtitle">Новый уровень роскоши, мощности и удовольствия от вождения для создания уникального автомобиля Land Rover.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dropdown-menu__model-infos">
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-fuel"/>
+                              </svg><span>ОТ 5,4<sup>1</sup></span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-co2"/>
+                              </svg><span>ОТ 142<sup>2</sup> Г/КМ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-seat"/>
+                              </svg><span>5 СИДЕНИЙ</span>
+                            </div>
+                            <div class="dropdown-menu__model-info">
+                              <svg width="1em" height="1em">
+                                <use xlink:href="img/icons/sprites.svg#icon-trunc"/>
+                              </svg><span>834 Л ОБЪЕМ БАГАЖНИКА</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown-menu__other-info">
+                          <div class="dropdown-menu__car-links-wrap">
+                            <ul class="dropdown-menu__car-links">
+                              <li><a class="button__link" href="#">Специальные предложения</a></li>
+                              <li><a class="button__link" href="#">Конфигуратор</a></li>
+                              <li><a class="button__link" href="#">Корпоративные продажи</a></li>
+                              <li><a class="button__link" href="#">Галерея</a></li>
+                            </ul>
+                            <div class="dropdown-menu__car-stock"><a class="button" href="#">автомобили в наличии</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="js-submenu dropdown-menu" data-menu-lev-2="1">
+            <button class="js-lev2-back-btn dropdown-menu__back-btn">Предложения</button>
+            <button class="js-close-submenu-btn dropdown-menu__close-btn">
+              <svg width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-cross"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu__dropdown-menu-items">
+              <div class="dropdown-menu__list-wrap">
+                <div class="row no-gutters">
+                  <div class="col-xl-2">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="0">Новые автомобили</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="0">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">Новые автомобили</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Автомобили в наличии</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Специальные предложения</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Запись на тест-драйв</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-2">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="1">Автомобили с пробегом</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="1">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">Автомобили с пробегом</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Обзор</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Автомобили Approved в наличии</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Автомобили с пробегом в наличии</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Оценка авто</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-2">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="2">Корпоративные продажи</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="2">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">Корпоративные продажи</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Обзор</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Специальные предложения</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-2">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="3">Финансовые предложения</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="3">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">Финансовые предложения</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Обзор</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Re-Start</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Калькулятор кредита и лизинга</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-2">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="4">Информация владельцам</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="4">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">Информация владельцам</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Сервис</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Аксессуары</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Шины и диски</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Рекомендованные работы</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Пункт дилера</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-2">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="5">Брендовая продукция</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="5">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">Брендовая продукция</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Lifestyle коллекция</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Чехлы для планшетов и смартфонов</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Велосипеды</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Горные и беговые лыжи</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Коллекционные модели</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Специальные предложения</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="js-submenu dropdown-menu" data-menu-lev-2="2">
+            <button class="js-lev2-back-btn dropdown-menu__back-btn">Владельцам</button>
+            <button class="js-close-submenu-btn dropdown-menu__close-btn">
+              <svg width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-cross"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu__dropdown-menu-items">
+              <div class="dropdown-menu__list-wrap">
+                <div class="row no-gutters">
+                  <div class="col-xl-3">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="0">владельцам</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="0">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">владельцам</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Аксессуары</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Программа лояльности</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">InControl</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Диалоговая приемка и видеотчет</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="1">сервис</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="1">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">сервис</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Запись на сервис</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Сервисный пакет</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Калькулятор ТО</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Электронная сервисная книжка</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Периодичность технического обслуживания</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="2">гарантия</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="2">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">гарантия</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Гарантия</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Запасные части</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Помощь на дорогах</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Программа мобильности</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-3">
+                    <h3 class="js-menu-lev3 dropdown-menu__submenu-title" data-menu-lev3="3">поддержка</h3>
+                    <div class="dropdown-menu__menu-lev-3">
+                      <div class="dropdown-menu__content" data-submenu-lev3="3">
+                        <button class="js-lev3-back-btn dropdown-menu__back-btn">поддержка</button>
+                        <ul>
+                          <li><a class="dropdown-menu__link-item" href="#">Кузовной ремонт</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Справочные материалы и руководства</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Подключение к Bluetooth</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Обновление навигации</a></li>
+                          <li><a class="dropdown-menu__link-item" href="#">Беспроводное обновление</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-menu__offers-icons">
+                <div class="row no-gutters justify-content-xl-center">
+                  <div class="col-xl-2"><a class="dropdown-menu__icons-wrap" href="#">
+                      <svg class="dropdown-menu__offers-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-label"/>
+                      </svg>
+                      <p class="dropdown-menu__icon-title">предложения по сервису</p></a></div>
+                  <div class="col-xl-2"><a class="dropdown-menu__icons-wrap" href="#">
+                      <svg class="dropdown-menu__offers-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-package"/>
+                      </svg>
+                      <p class="dropdown-menu__icon-title">сервисный пакет</p></a></div>
+                  <div class="col-xl-2"><a class="dropdown-menu__icons-wrap" href="#">
+                      <svg class="dropdown-menu__offers-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-service"/>
+                      </svg>
+                      <p class="dropdown-menu__icon-title">запись на сервис</p></a></div>
+                  <div class="col-xl-2"><a class="dropdown-menu__icons-wrap" href="#">
+                      <svg class="dropdown-menu__offers-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-warning"/>
+                      </svg>
+                      <p class="dropdown-menu__icon-title">помощь на дорогах</p></a></div>
+                  <div class="col-xl-2"><a class="dropdown-menu__icons-wrap" href="#">
+                      <svg class="dropdown-menu__offers-icon" width="1em" height="1em">
+                        <use xlink:href="img/icons/sprites.svg#icon-bag"/>
+                      </svg>
+                      <p class="dropdown-menu__icon-title">брендовая продукция</p></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="js-submenu dropdown-menu" data-menu-lev-2="3">
+            <button class="js-lev2-back-btn dropdown-menu__back-btn">о нас</button>
+            <button class="js-close-submenu-btn dropdown-menu__close-btn">
+              <svg width="1em" height="1em">
+                <use xlink:href="img/icons/sprites.svg#icon-cross"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu__dropdown-menu-items">
+              <ul class="dropdown-menu__dropdown-list">
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img27_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img27.jpg" srcset="img/resources/about/img27_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>контакты</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img28_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img28.jpg" srcset="img/resources/about/img28_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>о компании</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img29_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img29.jpg" srcset="img/resources/about/img29_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>Работа с клиентами</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img30_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img30.jpg" srcset="img/resources/about/img30_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>Наша команда</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img31_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img31.jpg" srcset="img/resources/about/img31_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>Вакансии</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img32_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img32.jpg" srcset="img/resources/about/img32_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>партнеры</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img33_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img33.jpg" srcset="img/resources/about/img33_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>новости</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img34_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img34.jpg" srcset="img/resources/about/img34_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>пункт дилера</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img34_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img34.jpg" srcset="img/resources/about/img34_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>пункт дилера</p>
+                    </div></a></li>
+                <li class="dropdown-menu__thumb-item"><a class="dropdown-menu__thumb-wrap" href="#">
+                    <picture>
+                      <source media="(min-width: 992px)" srcset="img/resources/about/img34_desktop.jpg"><img class="dropdown-menu__about-img" src="img/resources/about/img34.jpg" srcset="img/resources/about/img34_2x.jpg 2x" alt>
+                    </picture>
+                    <div class="dropdown-menu__about-info">
+                      <p>пункт дилера</p>
+                    </div></a></li>
+              </ul>
+            </div>
+          </div>
+    </header>
+    <main class="main">
+      <div class="page-header">
+        <h1 class="page-header__title">Контакты</h1>
+      </div>
+      <section class="contacts">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4">
+              <div>map</div>
+            </div>
+            <div class="col-lg-8 map-container">
+              <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" async="async"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="icons-block">
+        <div class="container-fluid">
+          <div class="icons-block__items">
+            <div class="row mx-0"><a class="col-md-6 col-lg-3 icons-block__icon-item" href="#">
+                <svg width="1em" height="1em">
+                  <use xlink:href="img/icons/sprites.svg#icon-car3"/>
+                </svg>
+                <div class="icons-block__title">автомобили в наличии</div>
+                <div class="icons-block__text">Выберите свой автомобиль уже сегодня</div></a><a class="col-md-6 col-lg-3 icons-block__icon-item" href="#">
+                <svg width="1em" height="1em">
+                  <use xlink:href="img/icons/sprites.svg#icon-rudder2"/>
+                </svg>
+                <div class="icons-block__title">заказ тест-драйва</div>
+                <div class="icons-block__text">Запишитесь на тест-драйв нового Land Rover</div></a><a class="col-md-6 col-lg-3 icons-block__icon-item" href="#">
+                <svg width="1em" height="1em">
+                  <use xlink:href="img/icons/sprites.svg#icon-repair2"/>
+                </svg>
+                <div class="icons-block__title">запись на сервис</div>
+                <div class="icons-block__text">Выберите удобное время для посещения</div></a><a class="col-md-6 col-lg-3 icons-block__icon-item" href="#">
+                <svg width="1em" height="1em">
+                  <use xlink:href="img/icons/sprites.svg#icon-wheel"/>
+                </svg>
+                <div class="icons-block__title">Запасные части</div>
+                <div class="icons-block__text">Оригинальные запасные части в наличии</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="fixed-sidebar"><a class="js-fixed-sidebar-trigger fixed-sidebar__item" href="#1">
+        <div class="js-fixed-sidebar-hidden fixed-sidebar__hidden-part"><span>запись на сервис</span></div>
+        <div class="fixed-sidebar__showed-part">
+          <svg width="1em" height="1em">
+            <use xlink:href="img/icons/sprites.svg#icon-repair"/>
+          </svg>
+        </div></a><a class="js-fixed-sidebar-trigger fixed-sidebar__item" href="#2">
+        <div class="js-fixed-sidebar-hidden fixed-sidebar__hidden-part"><span>конфигуратор</span></div>
+        <div class="fixed-sidebar__showed-part">
+          <svg width="1em" height="1em">
+            <use xlink:href="img/icons/sprites.svg#icon-car"/>
+          </svg>
+        </div></a><a class="js-fixed-sidebar-trigger fixed-sidebar__item" href="#3">
+        <div class="js-fixed-sidebar-hidden fixed-sidebar__hidden-part"><span>заказ тест-драйва</span></div>
+        <div class="fixed-sidebar__showed-part">
+          <svg width="1em" height="1em">
+            <use xlink:href="img/icons/sprites.svg#icon-rudder"/>
+          </svg>
+        </div></a><a class="js-fixed-sidebar-trigger fixed-sidebar__item" href="#4">
+        <div class="js-fixed-sidebar-hidden fixed-sidebar__hidden-part"><span>автомобили в наличии</span></div>
+        <div class="fixed-sidebar__showed-part">
+          <svg width="1em" height="1em">
+            <use xlink:href="img/icons/sprites.svg#icon-car2"/>
+          </svg>
+        </div></a>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid footer__wrap-items">
+        <div class="row align-items-center no-gutters">
+          <div class="col-lg-3 order-lg-3 ml-lg-auto d-lg-flex justify-content-lg-center">
+            <div class="footer__socials"><a class="footer__socials-item" href="#!">
+                <div class="footer__socials-icon">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="img/icons/sprites.svg#icon-fb"/>
+                  </svg>
+                </div><span>FaceBook</span></a><a class="footer__socials-item" href="#!">
+                <div class="footer__socials-icon">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="img/icons/sprites.svg#icon-vk"/>
+                  </svg>
+                </div><span>Vkontakte</span></a><a class="footer__socials-item" href="#!">
+                <div class="footer__socials-icon">
+                  <svg width="1em" height="1em">
+                    <use xlink:href="img/icons/sprites.svg#icon-inst"/>
+                  </svg>
+                </div><span>Instagramm</span></a></div>
+          </div>
+          <div class="col-lg-9 d-none d-md-block">
+            <div class="row no-gutters">
+              <div class="col-4">
+                <div class="footer__menu-links">
+                  <ul>
+                    <li><a href="#">Спецпредложения</a></li>
+                    <li><a href="#">Запись на тест-драйв</a></li>
+                    <li><a href="#">Запись на сервис</a></li>
+                    <li><a href="#">Конфигуратор</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                    <li><a href="#">Брошюры</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Подписаться на новости</a></li>
+                    <li><a href="#">Программа помощи на дорогах</a></li>
+                    <li><a href="#">Постгарантийный ремонт Land rover</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                    <li><a href="#">Модельный ряд Land Rover</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="footer__menu-links">
+                  <ul>
+                    <li><a href="#">experience</a></li>
+                    <li><a href="#">Корпоративные продажи</a></li>
+                    <li><a href="#">Above & Beyound</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Сервисные предложения</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="footer__menu-links">
+                  <ul>
+                    <li><a href="#">Экспедиции 2020 года</a></li>
+                    <li><a href="#">Семейство Land rover</a></li>
+                    <li><a href="#">Семейство Discovery</a></li>
+                    <li><a href="#">Land rover Bar</a></li>
+                    <li><a href="#">Land rover в России</a></li>
+                    <li><a href="#">Экспедиции</a></li>
+                    <li><a href="#">Наследие и ценности</a></li>
+                    <li><a href="#">Инновации и технологии</a></li>
+                    <li><a href="#">Открывая россию</a></li>
+                    <li><a href="#">кругосветное путешествие Land rover</a></li>
+                    <li><a href="#">Жизнь за гранью обыденного</a></li>
+                    <li><a href="#">активация incontrol protect</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <ul class="footer__links">
+              <li><a href="#">Правовая информация</a></li>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Карта сайта</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer__copyright">
+              <p>© ООО “Ягуар Ленд Ровер” 2020</p>
+              <p>MAJOR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts-min.js"></script>
+    <script src="js/vendors-min.js"></script>
+  </body>
+</html>
