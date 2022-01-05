@@ -7,6 +7,6 @@ module.exports="icons.ab4549d5.woff";
 },{}],"yDAz":[function(require,module,exports) {
 
 },{"./..\\fonts\\icons.woff":[["icons.ab4549d5.woff","j4zh"],"j4zh"]}],"Focm":[function(require,module,exports) {
-"use strict";var s=require("./plugin/js/sharingBtns");require("./plugin/styles/styles.scss"),require("./plugin/fonts/icons.woff"),new s.sharingBtns("#sharing-btns",{socials:"vk, facebook, twitter, reddit"});
+"use strict";var s=require("./plugin/js/sharingBtns");require("./plugin/styles/styles.scss"),require("./plugin/fonts/icons.woff"),new s.sharingBtns("#sharing-btns",{socials:"vk, facebook, twitter, reddit",position:"vertical",fixed:!0});
 },{"./plugin/js/sharingBtns":"mToK","./plugin/styles/styles.scss":"yDAz","./plugin/fonts/icons.woff":"j4zh"}]},{},["Focm"], null)
-//# sourceMappingURL=src.c333da58.js.map
+//# sourceMappingURL=src.183c789b.js.map
