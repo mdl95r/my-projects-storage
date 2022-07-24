@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>rustrack</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__additional">
+        <div class="container header__container">
+          <div class="header__contacts-container">
+            <div class="row justify-content-end align-items-center">
+              <div class="d-none d-md-block col-sm-4 col-xl-auto">
+                <div class="js-schedule-container header__schedule-container"><span class="js-schedule-popup decor-triangle header__schedule-title">Время работы</span>
+                  <div class="header__schedule-content">
+                    <p class="header__schedule-item">Пн-пт: с 8:00 до 18:00</p>
+                    <p class="header__schedule-item">Сб-вс: с 10:00 до 16:00</p>
+                  </div>
+                </div>
+                <p class="header__address">г. Нижний Новгород ул. Торфяная, 35</p>
+              </div>
+              <div class="d-none d-sm-block col-auto header__contacts-items">
+                <p class="header__contacts-item">Для регионов: <a href="#">8 (800) 77-77-210</a></p>
+                <p class="header__contacts-item">Нижний Новгород: <a href="#">8 (831) 225-00-55</a></p>
+              </div>
+              <div class="col-auto">
+                <button class="header__popup-callback">
+                  <svg class="header__popup-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-telephone"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center header__main">
+        <div class="d-flex align-items-center container header__container">
+          <div class="d-flex align-items-center">
+            <button class="js-burger-catalog header__burger-catalog"><span>Каталог</span></button>
+            <div class="header__logo-wrap"><img src="/img/logo.svg" alt>
+              <h1 class="d-none d-lg-block header__logo-title">производство и продажа автоспецтехники</h1>
+            </div>
+            <nav class="d-none d-xl-flex align-items-center header__menu">
+              <ul class="js-menu-items d-flex flex-wrap header__menu-list">
+                <li class="js-menu-item decor-triangle header__menu-item header__menu-item_submenu" data-menu-item="1"><a class="header__menu-link" href="#">О нас</a></li>
+                <li class="js-menu-item decor-triangle header__menu-item header__menu-item_submenu" data-menu-item="2"><a class="header__menu-link" href="#">Медиа</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Сервис</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Новости</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="d-flex align-items-center header__links">
+            <form class="header__form">
+              <div class="js-header-form-wrap header__input-wrap">
+                <input class="header__search-input" placeholder="Поиск ввод">
+              </div>
+              <button class="js-header-search header__search-button">
+                <svg class="header__icon header__icon_search">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-search"/>
+                </svg>
+              </button>
+            </form><a class="header__links-item" href="#">
+              <svg class="header__icon header__icon_basket">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-basket"/>
+              </svg></a><a class="header__links-item" href="#">
+              <svg class="header__icon header__icon_favs">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-fav"/>
+              </svg></a><a class="js-callback-popup d-none header__links-item header__links-item_callback-btn" href="#">
+              <svg class="header__icon header__icon_telephone">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-telephone"/>
+              </svg></a>
+          </div>
+        </div>
+        <div class="js-header-submenu header__submenu submenu">
+          <div class="container submenu__container">
+            <h3 class="js-submenu-trigger submenu-title submenu__title submenu__title_title-1" data-submenu-item="0"> <span class="decor-triangle">Категории</span></h3>
+            <div class="js-submenu-item submenu__item submenu__item_item-1">
+              <ul class="submenu__list">
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Краны-манипуляторы</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Автофургоны</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Автоэвакуаторы</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Автогидроподъёмники</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Бортовые Автомобили</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Самосвалы</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Автоцистерны</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Автотопливозаправщики</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Крюковые погрузчики</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Продукция в наличии</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Шасси</a></li>
+              </ul><a class="submenu__more" href="#">Смотреть все категории</a>
+            </div>
+            <h3 class="js-submenu-trigger submenu-title submenu__title submenu__title_title-2" data-submenu-item="1"><span class="decor-triangle">О нас</span></h3>
+            <div class="js-submenu-item submenu__item submenu__item_item-2">
+              <ul class="submenu__list">
+                <li class="submenu__list-item"><a class="submenu__link" href="#">О компании ООО «Рустрак»</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Новости</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Наши партнёры</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Производство</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Поставщикам и партнёрам</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Отзывы</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Сертификаты</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Вакансии</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Кредит и лизинг</a></li>
+              </ul>
+            </div>
+            <h3 class="js-submenu-trigger submenu-title submenu__title submenu__title_title-3" data-submenu-item="2"><span class="decor-triangle">Медиа</span></h3>
+            <div class="js-submenu-item submenu__item submenu__item_item-3">
+              <ul class="submenu__list">
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Фотогалерея</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Видео</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Материалы для скачивания</a></li>
+                <li class="submenu__list-item"><a class="submenu__link" href="#">Рекламные материалы</a></li>
+              </ul>
+            </div>
+            <div class="submenu__links"><a class="submenu__link" href="#">Сервис</a><a class="submenu__link" href="#">Новости</a><a class="submenu__link" href="#">Контакты</a></div>
+            <div class="submenu__address">
+              <p>г. Нижний Новгород ул. Торфяная, 35</p>
+              <p>Для регионов: <a href="#">8 (800) 77-77-210</a></p>
+              <p>Нижний Новгород: <a href="#">8 (831) 225-00-55</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="js-hero-slider swiper-container">
+          <div class="swiper-wrapper">
+                  <div class="swiper-slide hero__slide hero__slide_darken">
+                    <picture>
+                      <source media="(min-width: 900px)" data-srcset="img/hero/desktop.jpg">
+                      <source media="(min-width: 600px)" data-srcset="img/hero/tablet.jpg"><img class="swiper-lazy hero__img" data-src="img/hero/mobile.jpg" alt="hero">
+                    </picture>
+                    <div class="container">
+                      <div class="hero__content">
+                        <div class="hero__title">Завод-производитель автоспецтехники</div>
+                        <div class="hero__text">ООО «РусТрак» — это компания, занимающаяся производством и поставкой специализированной техники и спецтранспорта</div>
+                        <div class="hero__buttons"><a class="button button_primary hero__button" href="#">Открыть каталог</a>
+                          <button class="button js-trigger-callback button_secondary hero__button">Заказать звонок</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide hero__slide">
+                    <picture>
+                      <source media="(min-width: 900px)" data-srcset="img/hero/desktop.jpg">
+                      <source media="(min-width: 600px)" data-srcset="img/hero/tablet.jpg"><img class="swiper-lazy hero__img" data-src="img/hero/mobile.jpg" alt="hero">
+                    </picture>
+                    <div class="container">
+                      <div class="hero__content">
+                        <div class="hero__title">Завод-производитель автоспецтехники</div>
+                        <div class="hero__text">ООО «РусТрак» — это компания, занимающаяся производством и поставкой специализированной техники и спецтранспорта</div>
+                        <div class="hero__buttons"><a class="button button_primary hero__button" href="#">Открыть каталог</a>
+                          <button class="button js-trigger-callback button_secondary hero__button">Заказать звонок</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide hero__slide hero__slide_darken">
+                    <picture>
+                      <source media="(min-width: 900px)" data-srcset="img/hero/desktop.jpg">
+                      <source media="(min-width: 600px)" data-srcset="img/hero/tablet.jpg"><img class="swiper-lazy hero__img" data-src="img/hero/mobile.jpg" alt="hero">
+                    </picture>
+                    <div class="container">
+                      <div class="hero__content">
+                        <div class="hero__title">Завод-производитель автоспецтехники</div>
+                        <div class="hero__text">ООО «РусТрак» — это компания, занимающаяся производством и поставкой специализированной техники и спецтранспорта</div>
+                        <div class="hero__buttons"><a class="button button_primary hero__button" href="#">Открыть каталог</a>
+                          <button class="button js-trigger-callback button_secondary hero__button">Заказать звонок</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev hero__button-arrow hero__button-arrow_prev"></div>
+          <div class="swiper-button-next hero__button-arrow hero__button-arrow_next"></div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container">
+          <div class="js-category-slider swiper-container categories__slider">
+            <h2 class="categories__title">Категории</h2>
+            <div class="categories__nav-elements">
+              <div class="swiper-pagination categories__swiper-pagination"></div>
+              <div class="categories__navigation">
+                <div class="swiper-button-prev categories__button-arrow categories__button-arrow_prev"></div>
+                <div class="swiper-button-next categories__button-arrow categories__button-arrow_next"></div>
+              </div>
+            </div>
+            <div class="swiper-wrapper"><a class="swiper-slide categories__slide" href="#">
+                <div class="categories__content">
+                  <div class="categories__slide-title">Автофургоны</div>
+                  <div class="categories__slide-subtitle">27 моделей</div>
+                </div><img class="categories__img" src="img/dummy-truck.png" alt></a><a class="swiper-slide categories__slide" href="#">
+                <div class="categories__content">
+                  <div class="categories__slide-title">Автофургоны</div>
+                  <div class="categories__slide-subtitle">27 моделей</div>
+                </div><img class="categories__img" src="img/dummy-truck.png" alt></a><a class="swiper-slide categories__slide" href="#">
+                <div class="categories__content">
+                  <div class="categories__slide-title">Автофургоны</div>
+                  <div class="categories__slide-subtitle">27 моделей</div>
+                </div><img class="categories__img" src="img/dummy-truck.png" alt></a><a class="swiper-slide categories__slide" href="#">
+                <div class="categories__content">
+                  <div class="categories__slide-title">Автофургоны</div>
+                  <div class="categories__slide-subtitle">27 моделей</div>
+                </div><img class="categories__img" src="img/dummy-truck.png" alt></a><a class="swiper-slide categories__slide" href="#">
+                <div class="categories__content">
+                  <div class="categories__slide-title">Автофургоны</div>
+                  <div class="categories__slide-subtitle">27 моделей</div>
+                </div><img class="categories__img" src="img/dummy-truck.png" alt></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="container">
+                <h2 class="about__title">О компании <span>Рустрак</span></h2>
+                <div class="about__text">
+                  <p>Наша компания не случайно занимает лидирующие позиции на рынке спецтехники: каждый день мы вносим свой вклад в развитие отечественного автопрома и укрепление российской экономики.</p>
+                  <p>Наша компания снискала признание среди крупнейших отечественных корпораций и государственных структур, став поставщиком спецтехники для таких гигантов, как Газпром, Росатом, Россети, РСК «МИГ» и других.</p>
+                </div><a class="button button_primary button_arrow about__button" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="col-lg-7 d-lg-flex align-items-center"><img class="about__img" src="img/about-truck.png" alt="truck"></div>
+          </div>
+        </div>
+      </section>
+      <div class="advantages">
+        <div class="container">
+          <ul class="row advantages__items">
+            <li class="col-md-4 advantages__item">
+              <h3 class="advantages__item-title">5</h3>
+              <p class="advantages__item-subtitle">лет</p>
+              <p class="advantages__item-text">За 5 лет своей деятельности ООО «РусТрак» превратилось в крупное предприятие по производству и продаже специальной техники</p>
+            </li>
+            <li class="col-md-4 advantages__item">
+              <h3 class="advantages__item-title">95</h3>
+              <p class="advantages__item-subtitle">субъектов</p>
+              <p class="advantages__item-text">Мы обеспечили 95 субъектов РФ надежной техникой коммерческого и специализированного предназначения</p>
+            </li>
+            <li class="col-md-4 advantages__item">
+              <h3 class="advantages__item-title">10</h3>
+              <p class="advantages__item-subtitle">концернов</p>
+              <p class="advantages__item-text">ООО «РусТрак» дорожит доверием автопрома, которое подтверждено дилерскими полномочиями от 10 лидирующих концернов</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="scroll-slider">
+        <div class="container-fluid">
+          <div class="row"> 
+            <div class="col-xl-9 col-xxl-8 scroll-slider__wrap-col">
+              <div class="scroll-slider__img-wrap"><img src="img/truck2.png" alt></div>
+              <ul class="scroll-slider__list-items">
+                <li class="js-list-item scroll-slider__list-item" data-list-item="1"><span>Конструкторское бюро</span></li>
+                <li class="js-list-item scroll-slider__list-item" data-list-item="2"><span>Разработка</span></li>
+                <li class="js-list-item scroll-slider__list-item" data-list-item="3"><span>Производственная база</span></li>
+                <li class="js-list-item scroll-slider__list-item" data-list-item="4"><span>Гарантия</span></li>
+                <li class="js-list-item scroll-slider__list-item" data-list-item="5"><span>Сервис</span></li>
+              </ul>
+            </div>
+            <div class="col-xl-3 d-none d-xl-block">
+              <div class="scroll-slider__content-wrap">
+                <div class="scroll-slider__content-items">
+                  <div class="js-content-item scroll-slider__content-item" data-content-item="1">
+                    <div class="scroll-slider__content-img"><img src="img/svg/advantage-1.svg" alt="advantage-1"></div>
+                    <p class="scroll-slider__content-text">Собственное конструкторское бюро позволяет реализовать индивидуальные проекты клиента.</p>
+                  </div>
+                  <div class="js-content-item scroll-slider__content-item" data-content-item="2">
+                    <div class="scroll-slider__content-img"><img src="img/svg/advantage-2.svg" alt="advantage-2"></div>
+                    <p class="scroll-slider__content-text">Все проекты разработаны согласно мануал кузовостроителей.</p>
+                  </div>
+                  <div class="js-content-item scroll-slider__content-item" data-content-item="3">
+                    <div class="scroll-slider__content-img"><img src="img/svg/time.svg" alt="advantage-3"></div>
+                    <p class="scroll-slider__content-text">Собственная производственная база позволяет максимально снизить себестоимость продукции, повышая её конкурентоспособность.</p>
+                  </div>
+                  <div class="js-content-item scroll-slider__content-item" data-content-item="4">
+                    <div class="scroll-slider__content-img"><img src="img/svg/advantage-3.svg" alt="advantage-4"></div>
+                    <p class="scroll-slider__content-text">Гарантия на надстройки и работы соответствует гарантии шасси.</p>
+                  </div>
+                  <div class="js-content-item scroll-slider__content-item" data-content-item="5">
+                    <div class="scroll-slider__content-img"><img src="img/svg/spare-parts.svg" alt="advantage-5"></div>
+                    <p class="scroll-slider__content-text">Сервисное обслуживание: партнёрская сервисная сеть на всей территории РФ.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-1"></div>
+          </div>
+        </div>
+      </div>
+      <section class="recommendations">
+        <div class="container">
+          <div class="js-recommendations-slider swiper-container recommendations__slider">
+            <h2 class="recommendations__block-title">Рекомендуемая продукция</h2>
+            <div class="recommendations__nav-elements">
+              <div class="swiper-pagination recommendations__swiper-pagination"></div>
+              <div class="recommendations__navigation">
+                <div class="swiper-button-prev recommendations__button-arrow recommendations__button-arrow_prev"></div>
+                <div class="swiper-button-next recommendations__button-arrow recommendations__button-arrow_next"></div>
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide recommendations__item"><a class="recommendations__card-header" href="#"><img src="img/card-item.jpg" alt="card"></a>
+                <div class="recommendations__card-actions">
+                  <div class="recommendations__label recommendations__label_green">В наличии</div>
+                  <button class="button button_fav recommendations__fav"> </button>
+                </div>
+                <div class="recommendations__card-body">
+                  <h3 class="recommendations__title">HYUNDAI HD 78 c промтоварным фургоном</h3>
+                  <div class="recommendations__price">от 352 000₽</div>
+                  <div class="recommendations__buttons"><a class="button button_primary" href="#">Подробнее</a><a class="button button_download" href="#"><span>Получить КП</span></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide recommendations__item"><a class="recommendations__card-header" href="#"><img src="img/card-item.jpg" alt="card"></a>
+                <div class="recommendations__card-actions">
+                  <div class="recommendations__label recommendations__label_green">В наличии</div>
+                  <button class="button button_fav recommendations__fav"> </button>
+                </div>
+                <div class="recommendations__card-body">
+                  <h3 class="recommendations__title">HYUNDAI HD 78 c промтоварным фургоном</h3>
+                  <div class="recommendations__price">от 352 000₽</div>
+                  <div class="recommendations__buttons"><a class="button button_primary" href="#">Подробнее</a><a class="button button_download" href="#"><span>Получить КП</span></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide recommendations__item"><a class="recommendations__card-header" href="#"><img src="img/card-item.jpg" alt="card"></a>
+                <div class="recommendations__card-actions">
+                  <div class="recommendations__label recommendations__label_green">В наличии</div>
+                  <button class="button button_fav recommendations__fav"> </button>
+                </div>
+                <div class="recommendations__card-body">
+                  <h3 class="recommendations__title">HYUNDAI HD 78 c промтоварным фургоном</h3>
+                  <div class="recommendations__price">от 352 000₽</div>
+                  <div class="recommendations__buttons"><a class="button button_primary" href="#">Подробнее</a><a class="button button_download" href="#"><span>Получить КП</span></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide recommendations__item"><a class="recommendations__card-header" href="#"><img src="img/card-item.jpg" alt="card"></a>
+                <div class="recommendations__card-actions">
+                  <div class="recommendations__label recommendations__label_green">В наличии</div>
+                  <button class="button button_fav recommendations__fav"> </button>
+                </div>
+                <div class="recommendations__card-body">
+                  <h3 class="recommendations__title">HYUNDAI HD 78 c промтоварным фургоном</h3>
+                  <div class="recommendations__price">от 352 000₽</div>
+                  <div class="recommendations__buttons"><a class="button button_primary" href="#">Подробнее</a><a class="button button_download" href="#"><span>Получить КП</span></a></div>
+                </div>
+              </div>
+              <div class="swiper-slide recommendations__item"><a class="recommendations__card-header" href="#"><img src="img/card-item.jpg" alt="card"></a>
+                <div class="recommendations__card-actions">
+                  <div class="recommendations__label recommendations__label_green">В наличии</div>
+                  <button class="button button_fav recommendations__fav"> </button>
+                </div>
+                <div class="recommendations__card-body">
+                  <h3 class="recommendations__title">HYUNDAI HD 78 c промтоварным фургоном</h3>
+                  <div class="recommendations__price">от 352 000₽</div>
+                  <div class="recommendations__buttons"><a class="button button_primary" href="#">Подробнее</a><a class="button button_download" href="#"><span>Получить КП</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <div class="js-news-slider swiper-container news__slider">
+            <h2 class="news__block-title">Новости</h2>
+            <div class="news__nav-elements">
+              <div class="swiper-pagination news__swiper-pagination"></div>
+              <div class="news__navigation">
+                <div class="swiper-button-prev news__button-arrow news__button-arrow_prev"></div>
+                <div class="swiper-button-next news__button-arrow news__button-arrow_next"></div>
+              </div>
+            </div>
+            <div class="swiper-wrapper"><a class="swiper-slide news__item" href="#"><img class="news__img" src="img/news-img.jpg" alt="news">
+                <div class="news__content">
+                  <time class="news__date" datetime="2021-06-15 19:00">15.06.2021</time>
+                  <h3 class="news__title">КАМАЗ готовит конкурента ГАЗели и Валдая (первые ФОТО)</h3>
+                  <div class="button button_more button_arrow-right news__button">Подробнее</div>
+                </div></a><a class="swiper-slide news__item" href="#"><img class="news__img" src="img/news-img.jpg" alt="news">
+                <div class="news__content">
+                  <time class="news__date" datetime="2021-06-15 19:00">15.06.2021</time>
+                  <h3 class="news__title">КАМАЗ готовит конкурента ГАЗели и Валдая (первые ФОТО)</h3>
+                  <div class="button button_more button_arrow-right news__button">Подробнее</div>
+                </div></a><a class="swiper-slide news__item" href="#"><img class="news__img" src="img/news-img.jpg" alt="news">
+                <div class="news__content">
+                  <time class="news__date" datetime="2021-06-15 19:00">15.06.2021</time>
+                  <h3 class="news__title">КАМАЗ готовит конкурента ГАЗели и Валдая (первые ФОТО)</h3>
+                  <div class="button button_more button_arrow-right news__button">Подробнее</div>
+                </div></a><a class="swiper-slide news__item" href="#"><img class="news__img" src="img/news-img.jpg" alt="news">
+                <div class="news__content">
+                  <time class="news__date" datetime="2021-06-15 19:00">15.06.2021</time>
+                  <h3 class="news__title">КАМАЗ готовит конкурента ГАЗели и Валдая (первые ФОТО)</h3>
+                  <div class="button button_more button_arrow-right news__button">Подробнее</div>
+                </div></a><a class="swiper-slide news__item" href="#"><img class="news__img" src="img/news-img.jpg" alt="news">
+                <div class="news__content">
+                  <time class="news__date" datetime="2021-06-15 19:00">15.06.2021</time>
+                  <h3 class="news__title">КАМАЗ готовит конкурента ГАЗели и Валдая (первые ФОТО)</h3>
+                  <div class="button button_more button_arrow-right news__button">Подробнее</div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="brands">
+        <div class="container"> 
+          <div class="brands__list"><a class="brands__link" href="#"> <img src="img/foton.png" alt="foton"></a><a class="brands__link" href="#"> <img src="img/gaz.png" alt="gaz"></a><a class="brands__link" href="#"> <img src="img/hino.png" alt="hino"></a><a class="brands__link" href="#"> <img src="img/isuzu.png" alt="isuzu"></a><a class="brands__link" href="#"> <img src="img/uaz.png" alt="uaz"></a><a class="brands__link" href="#"> <img src="img/zil.png" alt="zil"></a></div>
+        </div>
+      </div>
+    </main>
+    <section class="prefooter">
+      <div class="container">
+        <div class="prefooter__main">
+          <div class="prefooter__block-info">
+            <h2 class="h1 prefooter__title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+            <p class="prefooter__subtitle">Оставьте свои контактные данные, и мы презвоним вам в ближайшее время</p>
+          </div>
+          <form>
+            <div class="row"> 
+              <div class="col-md-5 col-xxl-3">
+                <div class="input-wrap prefooter__input-wrap">
+                  <label class="label prefooter__label" for="name">Имя</label>
+                  <input class="input prefooter__input" id="name" type="text" name="name" placeholder="Иван Иванов">
+                </div>
+              </div>
+              <div class="col-md-4 col-xxl-3">
+                <div class="input-wrap prefooter__input-wrap">
+                  <label class="label prefooter__label" for="tel">Телефон</label>
+                  <input class="input prefooter__input" id="tel" type="number" name="tel" placeholder="+7">
+                </div>
+              </div>
+              <div class="d-flex justify-content-center align-items-md-end col-md-3 mt-1-mt-md-0 col-xxl-2">
+                <button class="button js-trigger-callback button_primary prefooter__button" type="submit">Отправить</button>
+              </div>
+            </div>
+          </form>
+          <p class="prefooter__disclaimer">Нажимая на кнопку отправить Вы соглашаетесь на обработку Ваших персональных данных компание ООО «Рустрак»</p><img class="prefooter__decoration" src="/img/truck.png" alt>
+        </div>
+        <div class="prefooter__success prefooter__success_hidden">
+          <h1 class="prefooter__success-title">УСПЕШНО!</h1>
+          <p class="prefooter__success-subtitle">Ваши данные направлену нашему менеджеру. <br> Мы свяжемся с вами в ближайшее время!</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer__main">
+          <div class="col-md-4 col-xl-6">
+            <div class="footer__contacts">
+              <div class="footer__contacts-list">
+                <p class="footer__contacts-item"><span>Тел/факс: </span><a href="#">8(831) 225-00-55</a></p>
+                <p class="footer__contacts-item"><span>Email: </span><a href="#">info@rtrf.ru</a></p>
+                <p class="footer__contacts-item">Нижний Новгород, ул. Торфяная, 35</p>
+              </div>
+              <button class="button js-trigger-callback button_primary footer__button">Заказать звонок</button>
+            </div>
+          </div>
+          <div class="col-md-8 col-xl-6">
+            <nav class="row footer__menu">
+              <div class="js-footer-col col-md-4 footer__section-item">
+                <div class="js-menu-title footer__menu-title"><span>Название блока</span></div>
+                <ul class="footer__menu-items">
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Категории</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Каталог</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Избранное</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">О компании</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Вакансии</a></li>
+                </ul>
+              </div>
+              <div class="js-footer-col col-md-4 footer__section-item">
+                <div class="js-menu-title footer__menu-title"><span>Название блока</span></div>
+                <ul class="footer__menu-items">
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Категории</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Каталог</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Избранное</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">О компании</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Вакансии</a></li>
+                </ul>
+              </div>
+              <div class="js-footer-col col-md-4 footer__section-item">
+                <div class="js-menu-title footer__menu-title"><span>Название блока</span></div>
+                <ul class="footer__menu-items">
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Категории</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Каталог</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Избранное</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">О компании</a></li>
+                  <li class="footer__menu-item"><a class="footer__menu-link" href="#">Вакансии</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row footer__additional">
+          <div class="col-md-6 order-md-1">
+            <div class="footer__socials"><a class="footer__socials-item" href="#">
+                <svg class="footer__social-icon footer__social-icon_facebook">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-facebook"/>
+                </svg></a><a class="footer__socials-item" href="#">
+                <svg class="footer__social-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-twitter"/>
+                </svg></a><a class="footer__socials-item" href="#">
+                <svg class="footer__social-icon footer__social-icon_google">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-google"/>
+                </svg></a><a class="footer__socials-item" href="#">
+                <svg class="footer__social-icon footer__social-icon_instagram">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-instagram"/>
+                </svg></a><a class="footer__socials-item" href="#">
+                <svg class="footer__social-icon footer__social-icon_youtube">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprites.svg#icon-youtube"/>
+                </svg></a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="footer__site-info"> 
+              <p>2009 - 2021 © Rus - Trucks</p>
+              <p>Информация на сайте не является публичной офертой и носит исключительно информационный характер</p><a href="#"> Разработка R-top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main-min.js"></script>
+    <script src="js/gsap-min.js"></script>
+  </body>
+</html>
