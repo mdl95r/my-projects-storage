@@ -230,7 +230,7 @@ body {
 
 .promo__title {
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   font-weight: 400;
 }
 
@@ -301,6 +301,13 @@ body {
   position: relative;
   font-size: 16px;
   line-height: 1;
+  border-bottom: 2px solid transparent;
+}
+
+.info-block__link:hover {
+  border-bottom-color: #000;
+  -webkit-transition: border-bottom 0.7s;
+  transition: border-bottom 0.7s;
 }
 
 .info-block__link:after {
@@ -481,7 +488,6 @@ body {
 
   .promo__title {
     font-size: 60px;
-    line-height: 1;
   }
 
   .promo__subtitle {
@@ -764,9 +770,13 @@ body {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
   .header__wrap {
     position: relative;
+  }
+
+  .header__bg-decor {
+    right: 30px;
   }
 }
 
