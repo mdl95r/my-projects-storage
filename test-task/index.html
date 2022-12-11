@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>My project</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrap">
+        <button class="js-burger-button burger header__burger"></button><a class="header__link" href="#"><span class="header__logo">LOGO</span></a>
+        <nav class="js-header-nav header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="#">услуги</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">абонементы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">почему мы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">оборудование</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">акции</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">faq</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">контакты</a></li>
+          </ul>
+          <div class="header__actions"><a class="button button_secondary button_telephone" href="tel:+78003664464"></a>
+            <button class="button button_primary js-trigger-modal-btn" type="button" data-id="modal-form">оставить заявку</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="v-h">My project</h1>
+      <section class="swiper js-hero-slider hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide hero__slide" data-slide-bullet="DOgie coin">
+            <div class="hero__img">
+              <picture>
+                <source data-srcset="img/image1.webp" srcset="img/t.png" type="image/webp">
+                <source data-srcset="img/image1_2x.jpg 2x" srcset="img/t.png" type="image/jpeg"><img class="swiper-lazy" data-src="img/image1.jpg" src="img/t.png" alt="Полет Илона Маска и DOGIE COIN">
+              </picture>
+            </div>
+            <div class="container">
+              <div class="hero__content">
+                <h2 class="hero__slide-title">Полет Илона Маска и DOGIE COIN</h2>
+                <div class="hero__slide-subtitle">
+                  <p>В прошлый четверг все офигели от полета DOGIE COIN на марс.</p>
+                </div>
+                <button class="button button_primary js-trigger-modal-btn hero__button" data-id="modal-form" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero__slide" data-slide-bullet="ПАДЕНИЕ">
+            <div class="hero__img">
+              <picture>
+                <source data-srcset="img/image2.webp" srcset="img/t.png" type="image/webp">
+                <source data-srcset="img/image2_2x.jpg 2x" srcset="img/t.png" type="image/jpeg"><img class="swiper-lazy" data-src="img/image2.jpg" src="img/t.png" alt="DOGIE COIN УПАЛ">
+              </picture>
+            </div>
+            <div class="container">
+              <div class="hero__content">
+                <h2 class="hero__slide-title">DOGIE COIN УПАЛ</h2>
+                <div class="hero__slide-subtitle">
+                  <p>Все в шоке, я потерял все деньги</p>
+                </div>
+                <button class="button button_primary js-trigger-modal-btn hero__button" data-id="modal-form" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide hero__slide" data-slide-bullet="ВОЗВРАЩЕНИЕ">
+            <div class="hero__img">
+              <picture>
+                <source data-srcset="img/image3.webp" srcset="img/t.png" type="image/webp">
+                <source data-srcset="img/image3_2x.jpg 2x" srcset="img/t.png" type="image/jpeg"><img class="swiper-lazy" data-src="img/image3.jpg" src="img/t.png" alt="Эпическое возвращения на хаи">
+              </picture>
+            </div>
+            <div class="container">
+              <div class="hero__content">
+                <h2 class="hero__slide-title">Эпическое возвращения на хаи</h2>
+                <div class="hero__slide-subtitle">
+                  <p>Все в шоке, я снова богат</p>
+                </div>
+                <button class="button button_primary js-trigger-modal-btn hero__button" data-id="modal-form" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section class="cards">
+        <div class="container">
+          <h2 class="cards__title">Карточки</h2>
+          <div class="js-cards-list cards__list">
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img1.webp" type="image/webp">
+                <source srcset="img/card-img1_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img1.jpg" alt="bridge" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">bridge</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img2.webp" type="image/webp">
+                <source srcset="img/card-img2_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img2.jpg" alt="Water" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">Water</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img3.webp" type="image/webp">
+                <source srcset="img/card-img3_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img3.jpg" alt="bridge" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">bridge</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img4.webp" type="image/webp">
+                <source srcset="img/card-img4_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img4.jpg" alt="bridge" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">bridge</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img5.webp" type="image/webp">
+                <source srcset="img/card-img5_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img5.jpg" alt="nature" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">nature</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img6.webp" type="image/webp">
+                <source srcset="img/card-img6_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img6.jpg" alt="forest" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">forest</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img7.webp" type="image/webp">
+                <source srcset="img/card-img7_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img7.jpg" alt="forest | art" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">forest | art</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img8.webp" type="image/webp">
+                <source srcset="img/card-img8_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img8.jpg" alt="bridge" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">bridge</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img9.webp" type="image/webp">
+                <source srcset="img/card-img9_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img9.jpg" alt="Water" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">Water</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+            <article class="cards__item card-item" itemscope="itemscope" itemtype="http://schema.org/Article">
+              <picture>
+                <source srcset="img/card-img10.webp" type="image/webp">
+                <source srcset="img/card-img10_2x.jpg 2x" type="image/jpeg"><img class="card-item__img" src="img/card-img10.jpg" alt="nature" loading="lazy">
+              </picture>
+              <div class="card-item__body" itemprop="articleBody">
+                <h3 class="card-item__title">nature</h3>
+                <p class="card-item__subtitle">How to increase your productivity with a Music</p>
+                <div class="card-item__text">
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem santium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolo…</p>
+                </div>
+                <p class="card-item__posted">Posted by <span itemprop="author">Eugenia</span>, on <time datetime="2019-07-24" itemprop="datePublished">July  24, 2019</time></p><a class="button button_card card-item__button" href="#">Continue reading</a>
+              </div>
+            </article>
+          </div>
+          <button class="button button_primary js-loading-trigger cards__more-button" type="button"><i>ЗАГРУЗИТЬ ЕЩЕ</i></button>
+        </div>
+      </section>
+    </main>
+        <div class="modal js-modal" id="modal-form"> 
+          <div class="callback">
+            <div class="callback__img-wrap">
+              <picture>
+                <source srcset="img/modal_2x.jpg 2x" type="image/jpeg">
+                <source srcset="img/modal.jpg" type="image/jpeg">
+                <source srcset="img/modal.webp" type="image/webp"><img src="img/modal.jpg" alt="modal-img" loading="lazy">
+              </picture>
+            </div>
+            <div class="callback__content">
+              <button class="js-modal-close-btn callback__button-close" type="button" title="Закрыть"></button>
+              <h3 class="callback__title">Оставьте заявку</h3>
+              <p class="callback__subtitle">Оставьте заявку и наш менеджер свяжется с вами в течение 10 -15 минут</p>
+              <form class="js-callback-form callback__form">
+                <div class="callback__form-group">
+                  <input class="input callback__input" type="text" name="name" placeholder="Ваше имя*" id="name">
+                </div>
+                <div class="callback__form-group">
+                  <input class="input callback__input" type="email" name="email" placeholder="E-mail*" id="email">
+                </div>
+                <div class="callback__form-group">
+                  <input class="input callback__input" type="tel" name="telephone" placeholder="+7(___)" id="telephone">
+                </div>
+                <div class="callback__form-group">
+                  <textarea class="textarea callback__textarea" name="question" placeholder="Ваш вопрос*" id="textarea"></textarea>
+                </div>
+                <div class="callback__submit">
+                  <button class="button button_primary" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                  <p class="callback__dislaimer">
+                    Нажимая на кнопку "Оставить заявку" вы соглашаетесь<a href="#"> с "Пользовательским соглашением"</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    <script src="js/main-min.js"></script>
+  </body>
+</html>
